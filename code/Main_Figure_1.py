@@ -204,6 +204,7 @@ plt.xlabel('Most-cited reference publication\n(Years relative to career)',fontsi
 plt.title('C',fontsize=title_fontsize,fontweight='heavy',
           horizontalalignment='right',verticalalignment='bottom',x=title_x_postion)
 
-
 plt.subplots_adjust(hspace=.4,wspace=.3)
+if not os.path.exists('./fig'):
+    os.mkdir('./fig')
 plt.savefig('./fig/Fig1.pdf',bbox_inches='tight')
